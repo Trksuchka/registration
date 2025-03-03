@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"
+    <title></title>
+  </head>
+  <body>
+    <h1 id="title">Групповая мастурбация в общежитии №2</h1>
+    <p id="description">В 531 комнате</p>
+    <form id="survey-form" method="post" action="https://register-obshaga">
+      <fieldset>
+        <label id="name-label" for="name">Ваше имя: <input id="name" type="text" required placeholder="Ф.И.О."></label>
+        <label id="email-label" for="email">Ваш E-mail: <input id="email" type="email" required placeholder="E-mail"></label>
+        <label id="number-label" for="number">Ваш возраст: <input id="number" type="number" required max='120' min='14' placeholder="Возраст"></label>
+        <label for="dropdown">Ваш статус:
+          <select id='dropdown'>
+            <option value="">(Кто вы?)</option>
+            <option value="1">Преподаватель</option>
+            <option value="2">Абитуриент</option>
+            <option value="3">Студент</option>
+            <option value="4">Выпускник</option>
+            <option value="5">СПОшник(черт)</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Это ваш первый раз?</legend>
+        <label for="radio1"><input class="line" value="1" id="radio1" name="meet"  type="radio" checked> Первый</label>
+        <label for="radio2"><input class="line" value="2" id="radio2" name="meet" type="radio"> Я уже смешарик</label>
+      </fieldset>
+      <fieldset>
+        <legend>Откуда вы о нас узнали?</legend>
+        <label class="checkbox_label" for="checkbox1">От друга                   <input class="checkbox" checked type="checkbox" value="1" name="found out" id="checkbox1"></label>
+        <label class="checkbox_label" for="checkbox2">Рекламный постер  <input class="checkbox" type="checkbox" value="1" name="found out" id="checkbox2"></label>
+        <label class="checkbox_label" for="checkbox3">Реклама на радио    <input class="checkbox" type="checkbox" value="1" name="found out" id="checkbox3"></label>
+        <label class="checkbox_label" for="checkbox4">Другое                      <input class="checkbox" type="checkbox" value="1" name="found out" id="checkbox4"></label>
+      </fieldset>
+      <fieldset>
+        <textarea id="textarea1" type="textarea" placeholder="Расскажите о себе"></textarea>
+      </fieldset>
+      <fieldset>
+        <label for="terms-and-conditions">
+          <input class="line" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> Я согласен с политикой конфиденциальности</a>
+        </label>
+        <input id="submit" type="submit">
+      </fieldset>
+    </form>
+  </body>
+
+</html>
